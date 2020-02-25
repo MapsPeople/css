@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/mapsindoors/css/issues"
   },
-  "homepage": "https://github.com/mapsindoors/css#readme"
+  "homepage": "https://github.com/mapsindoors/css#readme",
+  "devDependencies": {
+    "@mapsindoors/midt": "^10.0.7"
+  }
 }
