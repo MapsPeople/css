@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo page</title>
+    <style>
+        .mi-buttons .flex {
+            display: flex;
+        }
+
+        .mi-buttons .inline-flex {
+            display: inline-flex;
+        }
+
+        .mi-buttons .mi-button {
+            margin: 8px;
+        }
+    </style>
+    <link rel="stylesheet" href="buttons.css">
+</head>
+<body>
+    <section class="mi-buttons">
+        <header>
+            <h2>Buttons</h2>
+        </header>
+
+        <div class="flex inline-flex">
+            <button type="button" class="mi-button mi-button--base">
+                Click me
+            </button>
+            <button type="button" class="mi-button mi-button--base mi-button--icon-left">
+                <object
+                    data="https://2kg.fra1.digitaloceanspaces.com/icon.svg"
+                    type="image/svg+xml"
+                ></object>
+                Click me
+            </button>
+            <button type="button" class="mi-button mi-button--base mi-button--icon-right">
+                Click me
+                <object
+                    data="https://2kg.fra1.digitaloceanspaces.com/icon.svg"
+                    type="image/svg+xml"
+                ></object>
+            </button>
+            <button
+                type="button"
+                class="mi-button mi-button--base mi-button--icon-right mi-button--icon-left"
+            >
+                <object
+                    data="https://2kg.fra1.digitaloceanspaces.com/icon.svg"
+                    type="image/svg+xml"
+                ></object>
+                Click me
+                <object
+                    data="https://2kg.fra1.digitaloceanspaces.com/icon.svg"
+                    type="image/svg+xml"
+                ></object>
+            </button>
+        </div>
+        <div class="flex inline-flex">
+            <button type="button" class="mi-button mi-button--primary">
+                Click me
+            </button>
+
+            <button type="button" class="mi-button mi-button--primary mi-button--icon-left">
+                <object
+                    data="https://2kg.fra1.digitaloceanspaces.com/icon.svg"
+                    type="image/svg+xml"
+                ></object>
+                Click me
+            </button>
+            <button type="button" class="mi-button mi-button--primary mi-button--icon-right">
+                Click me
+                <object
+                    data="https://2kg.fra1.digitaloceanspaces.com/icon.svg"
+                    type="image/svg+xml"
+                ></object>
+            </button>
+            <button
+                type="button"
+                class="mi-button mi-button--primary mi-button--icon-left mi-button--icon-right"
+            >
+                <object
+                    data="https://2kg.fra1.digitaloceanspaces.com/icon.svg"
+                    type="image/svg+xml"
+                ></object>
+                Click me
+                <object
+                    data="https://2kg.fra1.digitaloceanspaces.com/icon.svg"
+                    type="image/svg+xml"
+                ></object>
+            </button>
+        </div>
+        <div class="flex vertical-align-center">
+            <button type="button" class="mi-button mi-button--danger">
+                Take me to the Danger Zone
+            </button>
+
+            <button type="button" class="mi-button mi-button--danger mi-button--icon-left">
+                <object
+                    data="https://2kg.fra1.digitaloceanspaces.com/icon.svg"
+                    type="image/svg+xml"
+                ></object>
+                Take me to the Danger Zone
+            </button>
+
+            <button type="button" class="mi-button mi-button--danger mi-button--icon-right">
+                Take me to the Danger Zone
+                <object
+                    data="https://2kg.fra1.digitaloceanspaces.com/icon.svg"
+                    type="image/svg+xml"
+                ></object>
+            </button>
+            <button
+                type="button"
+                class="mi-button mi-button--danger mi-button--icon-left mi-button--icon-right"
+            >
+                <object
+                    data="https://2kg.fra1.digitaloceanspaces.com/icon.svg"
+                    type="image/svg+xml"
+                ></object>
+                Take me to the Danger Zone
+                <object
+                    data="https://2kg.fra1.digitaloceanspaces.com/icon.svg"
+                    type="image/svg+xml"
+                ></object>
+            </button>
+        </div>
+        <div class="flex vertical-align-center">
+            <button type="button" class="mi-button mi-button--outline">
+                Body outline
+            </button>
+
+            <button type="button" class="mi-button mi-button--outline mi-button--icon-left">
+                <object
+                    data="https://2kg.fra1.digitaloceanspaces.com/icon.svg"
+                    type="image/svg+xml"
+                ></object>
+                Body outline
+            </button>
+
+            <button type="button" class="mi-button mi-button--outline mi-button--icon-right">
+                Body outline
+                <object
+                    data="https://2kg.fra1.digitaloceanspaces.com/icon.svg"
+                    type="image/svg+xml"
+                ></object>
+            </button>
+            <button
+                type="button"
+                class="mi-button mi-button--outline mi-button--icon-left mi-button--icon-right"
+            >
+                <object
+                    data="https://2kg.fra1.digitaloceanspaces.com/icon.svg"
+                    type="image/svg+xml"
+                ></object>
+                Body outline
+                <object
+                    data="https://2kg.fra1.digitaloceanspaces.com/icon.svg"
+                    type="image/svg+xml"
+                ></object>
+            </button>
+        </div>
+        <div class="flex vertical-align-center">
+            <button type="button" class="mi-button mi-button--link">
+                Slinky link
+            </button>
+
+            <button type="button" class="mi-button mi-button--link mi-button--icon-left">
+                <object
+                    data="https://2kg.fra1.digitaloceanspaces.com/icon.svg"
+                    type="image/svg+xml"
+                ></object>
+                Slinky link
+            </button>
+            <button type="button" class="mi-button mi-button--link mi-button--icon-right">
+                Slinky link
+                <object
+                    data="https://2kg.fra1.digitaloceanspaces.com/icon.svg"
+                    type="image/svg+xml"
+                ></object>
+            </button>
+            <button
+                type="button"
+                class="mi-button mi-button--link mi-button--icon-left mi-button--icon-right"
+            >
+                <object
+                    data="https://2kg.fra1.digitaloceanspaces.com/icon.svg"
+                    type="image/svg+xml"
+                ></object>
+                Slinky link
+                <object
+                    data="https://2kg.fra1.digitaloceanspaces.com/icon.svg"
+                    type="image/svg+xml"
+                ></object>
+            </button>
+        </div>
+        <div class="flex vertical-align-center">
+            <button type="button" class="mi-button mi-button--primary" disabled>
+                Click me
+            </button>
+            <button type="button" class="mi-button mi-button--danger" disabled>
+                Take me to the Danger Zone
+            </button>
+            <button type="button" class="mi-button mi-button--outline" disabled>
+                Body outline
+            </button>
+            <button type="button" class="mi-button mi-button--link" disabled>
+                Slinky link
+            </button>
+        </div>
+        <div class="flex vertical-align-center">
+            <a class="mi-button mi-button--primary">Click me</a>
+            <a class="mi-button mi-button--danger">Take me to the Danger Zone</a>
+            <a class="mi-button mi-button--outline">Body outline</a>
+            <a class="mi-button mi-button--link">Slinky link</a>
+        </div>
+        <div class="flex vertical-align-center">
+            <button type="button" class="mi-button mi-button--primary mi-button--small">
+                Click me
+            </button>
+            <button type="button" class="mi-button mi-button--danger mi-button--small">
+                Take me to the Danger Zone
+            </button>
+            <button type="button" class="mi-button mi-button--outline mi-button--small">
+                Body outline
+            </button>
+            <button type="button" class="mi-button mi-button--link mi-button--small">
+                Slinky link
+            </button>
+        </div>
+        <div class="flex vertical-align-center">
+            <button type="button" class="mi-button mi-button--primary mi-button--small mi-button--icon-left">
+            <object
+                    data="https://2kg.fra1.digitaloceanspaces.com/icon.svg"
+                    type="image/svg+xml"
+                ></object>
+                Click me
+            </button>
+            <button type="button" class="mi-button mi-button--danger mi-button--small mi-button--icon-right">
+                Take me to the Danger Zone
+                <object
+                    data="https://2kg.fra1.digitaloceanspaces.com/icon.svg"
+                    type="image/svg+xml"
+                ></object>
+            </button>
+            <button type="button" class="mi-button mi-button--outline mi-button--small mi-button--icon-both">
+            <object
+                    data="https://2kg.fra1.digitaloceanspaces.com/icon.svg"
+                    type="image/svg+xml"
+                ></object>
+                Body outline
+                <object
+                    data="https://2kg.fra1.digitaloceanspaces.com/icon.svg"
+                    type="image/svg+xml"
+                ></object>
+            </button>
+            <button type="button" class="mi-button mi-button--link mi-button--small">
+                Slinky link
+            </button>
+        </div>
+        <div class="flex vertical-align-center">
+            <button type="button" class="mi-button mi-button--primary mi-button--large">
+                Click me
+            </button>
+            <button type="button" class="mi-button mi-button--danger mi-button--large">
+                Take me to the Danger Zone
+            </button>
+            <button type="button" class="mi-button mi-button--outline mi-button--large">
+                Body outline
+            </button>
+            <button type="button" class="mi-button mi-button--link mi-button--large">
+                Slinky link
+            </button>
+        </div>
+        <div class="flex vertical-align-center">
+            <button type="button" class="mi-button mi-button--primary mi-button--large mi-button--icon-left">
+            <object
+                    data="https://2kg.fra1.digitaloceanspaces.com/icon.svg"
+                    type="image/svg+xml"
+                ></object>
+                Click me
+            </button>
+            <button type="button" class="mi-button mi-button--danger mi-button--large mi-button--icon-right">
+                Take me to the Danger Zone
+                <object
+                    data="https://2kg.fra1.digitaloceanspaces.com/icon.svg"
+                    type="image/svg+xml"
+                ></object>
+            </button>
+            <button type="button" class="mi-button mi-button--outline mi-button--large mi-button--icon-both">
+            <object
+                    data="https://2kg.fra1.digitaloceanspaces.com/icon.svg"
+                    type="image/svg+xml"
+                ></object>
+                Body outline
+                <object
+                    data="https://2kg.fra1.digitaloceanspaces.com/icon.svg"
+                    type="image/svg+xml"
+                ></object>
+            </button>
+            <button type="button" class="mi-button mi-button--link mi-button--large">
+                Slinky link
+            </button>
+        </div>
+    </section>
+</body>
+</html>
