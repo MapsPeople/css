@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "description": "CSS components and helpers using MapsIndoors Design Tokens (midt)",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass buttons.scss buttons.css --no-source-map"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   },
   "homepage": "https://github.com/mapsindoors/css#readme",
   "devDependencies": {
-    "@mapsindoors/midt": "^10.0.7"
+    "@mapsindoors/midt": "^10.0.7",
+    "sass": "^1.26.0"
   }
 }
