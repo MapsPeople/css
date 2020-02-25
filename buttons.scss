@@ -17,7 +17,7 @@ a.mi-button {
     cursor: default;
 }
 
-.button {
+.mi-button {
     @include sizing.min-width(xxxx-large);
     @include border.radius(medium);
     @include border.width(medium);
@@ -41,7 +41,7 @@ a.mi-button {
         @include sizing.height(medium);
     }
 
-    &.btn-small {
+    &--small {
         @include padding.horizontal(small);
         @include padding.vertical(x-small);
         @include font.size(small);
@@ -52,7 +52,7 @@ a.mi-button {
         }
     }
 
-    &.btn-large {
+    &--large {
         @include padding.horizontal(medium);
         @include font.size(large);
         object {
@@ -61,20 +61,20 @@ a.mi-button {
         }
     }
 
-    &.btn-icon-left {
+    &--icon-left {
         @include padding.left(small);
         object {
             @include margin.right(x-small);
         }
     }
-    &.btn-icon-right {
+    &--icon-right {
         @include padding.right(small);
         object {
             @include margin.left(x-small);
         }
     }
 
-    &.btn-icon-both {
+    &--icon-both {
         @include padding.vertical(small);
         object:first-of-type {
             @include margin.right(x-small);
@@ -84,8 +84,8 @@ a.mi-button {
         }
     }
 
-    &.base,
-    &.danger {
+    &--base,
+    &--danger {
         background: linear-gradient(
             variables.$color-gray-10,
             variables.$color-gray-20
@@ -109,7 +109,7 @@ a.mi-button {
         }
     }
 
-    &.primary {
+    &--primary {
         @include color.white(white);
         @include border.green(70);
         background: linear-gradient(
@@ -137,7 +137,7 @@ a.mi-button {
         }
     }
 
-    &.danger {
+    &--danger {
         @include color.red(60);
 
         object {
@@ -146,7 +146,7 @@ a.mi-button {
         }
     }
 
-    &.outline {
+    &--outline {
         @include color.blue(60);
         @include border.blue(60);
         background-color: transparent;
@@ -169,7 +169,7 @@ a.mi-button {
         }
     }
 
-    &.link {
+    &--link {
         @include color.blue(60);
         @include border.style(none);
         background-color: transparent;
