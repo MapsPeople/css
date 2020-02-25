@@ -1,0 +1,199 @@
+@use "node_modules/@mapsindoors/midt/background-color";
+@use "node_modules/@mapsindoors/midt/border";
+@use "node_modules/@mapsindoors/midt/color";
+@use "node_modules/@mapsindoors/midt/elevation";
+@use "node_modules/@mapsindoors/midt/font";
+@use "node_modules/@mapsindoors/midt/icons";
+@use "node_modules/@mapsindoors/midt/margin";
+@use "node_modules/@mapsindoors/midt/opacity";
+@use "node_modules/@mapsindoors/midt/padding";
+@use "node_modules/@mapsindoors/midt/transitions";
+@use "node_modules/@mapsindoors/midt/z-index";
+@use "node_modules/@mapsindoors/midt/sizing";
+
+@use "node_modules/@mapsindoors/midt/build/scss/variables" as variables;
+
+a.mi-button {
+    cursor: default;
+}
+
+.button {
+    @include sizing.min-width(xxxx-large);
+    @include border.radius(medium);
+    @include border.width(medium);
+    @include border.style(solid);
+    @include font.size(medium);
+    @include font.weight(large);
+    @include padding.horizontal(medium);
+    @include padding.vertical(small);
+    display: inline-flex;
+    align-items: center;
+
+    &:disabled {
+        @include opacity.opacity(x-large);
+        cursor: not-allowed;
+    }
+
+    object {
+        filter: invert(9%) sepia(13%) saturate(692%) hue-rotate(185deg)
+            brightness(98%) contrast(91%);
+        @include sizing.width(medium);
+        @include sizing.height(medium);
+    }
+
+    &.btn-small {
+        @include padding.horizontal(small);
+        @include padding.vertical(x-small);
+        @include font.size(small);
+        @include sizing.height(x-large);
+        object {
+            @include sizing.width(medium);
+            @include sizing.height(medium);
+        }
+    }
+
+    &.btn-large {
+        @include padding.horizontal(medium);
+        @include font.size(large);
+        object {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    &.btn-icon-left {
+        @include padding.left(small);
+        object {
+            @include margin.right(x-small);
+        }
+    }
+    &.btn-icon-right {
+        @include padding.right(small);
+        object {
+            @include margin.left(x-small);
+        }
+    }
+
+    &.btn-icon-both {
+        @include padding.vertical(small);
+        object:first-of-type {
+            @include margin.right(x-small);
+        }
+        object:last-of-type {
+            @include margin.left(x-small);
+        }
+    }
+
+    &.base,
+    &.danger {
+        background: linear-gradient(
+            variables.$color-gray-10,
+            variables.$color-gray-20
+        );
+        @include color.black(base);
+        @include border.gray(40);
+
+        &:not(:disabled):hover {
+            background: linear-gradient(
+                variables.$color-gray-20,
+                variables.$color-gray-30
+            );
+            @include border.gray(50);
+        }
+
+        &:not(:disabled):active {
+            background: linear-gradient(
+                variables.$color-gray-30,
+                variables.$color-gray-20
+            );
+        }
+    }
+
+    &.primary {
+        @include color.white(white);
+        @include border.green(70);
+        background: linear-gradient(
+            variables.$color-green-50,
+            variables.$color-green-60
+        );
+
+        object {
+            filter: invert(100%) sepia(93%) saturate(0%) hue-rotate(201deg)
+                brightness(106%) contrast(106%);
+        }
+
+        &:not(:disabled):hover {
+            background: linear-gradient(
+                variables.$color-green-60,
+                variables.$color-green-70
+            );
+        }
+
+        &:not(:disabled):active {
+            background: linear-gradient(
+                variables.$color-green-70,
+                variables.$color-green-60
+            );
+        }
+    }
+
+    &.danger {
+        @include color.red(60);
+
+        object {
+            filter: invert(29%) sepia(76%) saturate(4633%) hue-rotate(347deg)
+                brightness(85%) contrast(108%);
+        }
+    }
+
+    &.outline {
+        @include color.blue(60);
+        @include border.blue(60);
+        background-color: transparent;
+
+        object {
+            filter: invert(38%) sepia(97%) saturate(742%) hue-rotate(188deg)
+                brightness(86%) contrast(97%);
+        }
+
+        &:not(:disabled):hover {
+            @include color.blue(70);
+            @include border.blue(70);
+            @include background-color.blue(10);
+        }
+
+        &:not(:disabled):active {
+            @include color.blue(70);
+            @include border.blue(70);
+            @include background-color.blue(20);
+        }
+    }
+
+    &.link {
+        @include color.blue(60);
+        @include border.style(none);
+        background-color: transparent;
+        cursor: pointer;
+
+        object {
+            filter: invert(38%) sepia(97%) saturate(742%) hue-rotate(188deg)
+                brightness(86%) contrast(97%);
+        }
+
+        &:not(:disabled):hover {
+            @include color.blue(70);
+            @include border.blue(70);
+            @include background-color.blue(10);
+        }
+
+        &:disabled:hover {
+            cursor: not-allowed;
+        }
+
+        &:not(:disabled):active {
+            @include color.blue(70);
+            @include border.blue(70);
+            @include background-color.blue(20);
+        }
+    }
+}
