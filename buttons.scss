@@ -18,7 +18,6 @@ a.mi-button {
 }
 
 .mi-button {
-    @include sizing.min-width(xxxx-large);
     @include border.radius(medium);
     @include border.width(medium);
     @include border.style(solid);
