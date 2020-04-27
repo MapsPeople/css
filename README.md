@@ -6,6 +6,15 @@ The component is using the BEM methodology.
 
 See the demo page (index.html) for an overview.
 
+## Release a new version
+
+To release a new version:
+
+1. Make your changes and commit them
+1. Update the version number in `package.json` based on [Semantic Versioning](https://semver.org)
+1. Commit the version number change with this message: `Release vX.Y.Z`
+1. The GitHub Action to publish to npm will automatically check for a difference between the latest version and the new version in `package.json` and make the release
+
 ## mi-button
 
 The `.mi-button` block class is used for styling buttons.
