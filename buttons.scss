@@ -60,6 +60,11 @@ a.mi-button {
         }
     }
 
+    &--full-width {
+        flex-grow: 1;
+        justify-content: center;
+    }
+
     &--icon-left {
         @include padding.left(small);
         object {

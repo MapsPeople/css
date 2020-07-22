@@ -45,6 +45,10 @@ a.mi-button {
   width: 20px;
   height: 20px;
 }
+.mi-button--full-width {
+    flex-grow: 1;
+    justify-content: center;
+}
 .mi-button--icon-left {
   padding-left: 12px;
 }
