@@ -1,26 +1,26 @@
 {
-  "name": "@mapsindoors/css",
-  "version": "0.0.4",
-  "description": "CSS components and helpers using MapsIndoors Design Tokens (midt)",
-  "scripts": {
-    "sass": "sass .:. --no-source-map"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/mapsindoors/css.git"
-  },
-  "keywords": [
-    "mapsindoors",
-    "css"
-  ],
-  "author": "MapsPeople A/S",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/mapsindoors/css/issues"
-  },
-  "homepage": "https://github.com/mapsindoors/css#readme",
-  "devDependencies": {
-    "@mapsindoors/midt": "^11.0.0",
-    "sass": "^1.26.0"
-  }
+    "name": "@mapsindoors/css",
+    "version": "0.0.5",
+    "description": "CSS components and helpers using MapsIndoors Design Tokens (midt)",
+    "scripts": {
+        "sass": "sass .:. --no-source-map"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/mapsindoors/css.git"
+    },
+    "keywords": [
+        "mapsindoors",
+        "css"
+    ],
+    "author": "MapsPeople A/S",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/mapsindoors/css/issues"
+    },
+    "homepage": "https://github.com/mapsindoors/css#readme",
+    "devDependencies": {
+        "@mapsindoors/midt": "^11.0.0",
+        "sass": "^1.26.0"
+    }
 }
