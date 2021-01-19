@@ -141,6 +141,34 @@ a.mi-button {
         }
     }
 
+    &--delete {
+        background: linear-gradient(
+            variables.$color-red-50,
+            variables.$color-red-60
+        );
+        @include color.white(white);
+        @include border.red(70);
+
+        object {
+            filter: invert(100%) sepia(93%) saturate(0%) hue-rotate(201deg)
+                brightness(106%) contrast(106%);
+        }
+
+        &:not(:disabled):hover {
+            background: linear-gradient(
+                variables.$color-red-60,
+                variables.$color-red-70
+            );
+        }
+
+        &:not(:disabled):active {
+            background: linear-gradient(
+                variables.$color-red-70,
+                variables.$color-red-60
+            );
+        }
+    }
+
     &--danger {
         @include color.red(60);
 

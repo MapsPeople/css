@@ -46,8 +46,8 @@ a.mi-button {
   height: 20px;
 }
 .mi-button--full-width {
-    width: 100%;
-    justify-content: center;
+  width: 100%;
+  justify-content: center;
 }
 .mi-button--icon-left {
   padding-left: 12px;
@@ -96,6 +96,20 @@ a.mi-button {
 }
 .mi-button--primary:not(:disabled):active {
   background: linear-gradient(#20693e, #2a844e);
+}
+.mi-button--delete {
+  background: linear-gradient(#f55151, #de1b1b);
+  color: #ffffff;
+  border-color: #ba0d0d;
+}
+.mi-button--delete object {
+  filter: invert(100%) sepia(93%) saturate(0%) hue-rotate(201deg) brightness(106%) contrast(106%);
+}
+.mi-button--delete:not(:disabled):hover {
+  background: linear-gradient(#de1b1b, #ba0d0d);
+}
+.mi-button--delete:not(:disabled):active {
+  background: linear-gradient(#ba0d0d, #de1b1b);
 }
 .mi-button--danger {
   color: #de1b1b;
