@@ -5,6 +5,7 @@
     "scripts": {
         "sass": "sass .:. --no-source-map"
     },
+    "main": "index.html",
     "repository": {
         "type": "git",
         "url": "git://github.com/mapsindoors/css.git"
