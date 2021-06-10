@@ -21,10 +21,7 @@
     &[type="number"],
     &[type="range"] {
         display: block;
-
-        &:first-child {
-            @include margin.top(x-small);
-        }
+        @include margin.top(x-small);
     }
 
     &[type="radio"],

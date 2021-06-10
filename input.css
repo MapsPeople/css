@@ -8,8 +8,6 @@
 }
 .mi-input[type=text], .mi-input[type=number], .mi-input[type=range] {
   display: block;
-}
-.mi-input[type=text]:first-child, .mi-input[type=number]:first-child, .mi-input[type=range]:first-child {
   margin-top: 8px;
 }
 .mi-input[type=radio], .mi-input[type=checkbox] {
