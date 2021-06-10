@@ -3,7 +3,8 @@
     "version": "0.0.8",
     "description": "CSS components and helpers using MapsIndoors Design Tokens (midt)",
     "scripts": {
-        "sass": "sass .:. --no-source-map"
+        "sass": "sass .:. --no-source-map",
+        "sass-watch": "sass --watch .:. --no-source-map"
     },
     "main": "index.html",
     "repository": {
