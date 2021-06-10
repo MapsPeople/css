@@ -1,0 +1,12 @@
+.mi-label {
+  display: block;
+  font-style: normal;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #1e2025;
+}
+.mi-label--right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
