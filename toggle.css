@@ -38,6 +38,6 @@
   left: 24px;
 }
 .mi-toggle:disabled + .mi-toggle-btn {
-  opacity: 0.72;
+  opacity: 0.48;
   cursor: not-allowed;
 }

@@ -20,7 +20,7 @@
     @include font.weight(large);
 
     &:disabled {
-        @include opacity.opacity(x-large);
+        @include opacity.opacity(large);
         cursor: not-allowed;
     }
 

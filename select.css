@@ -13,7 +13,7 @@
   font-weight: 500;
 }
 .mi-select:disabled {
-  opacity: 0.72;
+  opacity: 0.48;
   cursor: not-allowed;
 }
 .mi-select:not(:disabled):hover {
