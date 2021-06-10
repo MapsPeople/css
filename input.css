@@ -18,6 +18,6 @@
   margin-bottom: 8px;
 }
 .mi-input:disabled {
-  opacity: 0.72;
+  opacity: 0.48;
   cursor: not-allowed;
 }

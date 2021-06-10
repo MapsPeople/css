@@ -16,7 +16,7 @@
   background: url("data:image/svg+xml;base64,PHN2ZyBmaWxsPScjNDQ0QjU1JyBoZWlnaHQ9JzI0JyB2aWV3Qm94PScwIDAgMjQgMjQnIHdpZHRoPScyNCcgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz4KPHBhdGggZD0nTTcgMTBsNSA1IDUtNXonLz4KPHBhdGggZD0nTTAgMGgyNHYyNEgweicgZmlsbD0nbm9uZScvPgo8L3N2Zz4=") 96%/15% no-repeat, linear-gradient(#f5f7fa, #ebeff5);
 }
 .mi-select:disabled {
-  opacity: 0.72;
+  opacity: 0.48;
   cursor: not-allowed;
 }
 .mi-select:not(:disabled):hover {

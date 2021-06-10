@@ -26,7 +26,7 @@ $arrowBase64: "data:image/svg+xml;base64,PHN2ZyBmaWxsPScjNDQ0QjU1JyBoZWlnaHQ9JzI
     background: url($arrowBase64) 96% / 15% no-repeat, linear-gradient(variables.$color-gray-10, variables.$color-gray-20);
 
     &:disabled {
-        @include opacity.opacity(x-large);
+        @include opacity.opacity(large);
         cursor: not-allowed;
     }
 
