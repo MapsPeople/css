@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Demo page</title>
+    <link rel="stylesheet" href="select.css">
     <style>
         body {
             margin: 30px 50px 100px;
@@ -392,6 +393,27 @@
             <button type="button" class="mi-button mi-button--base mi-button--full-width">
                 Full width
             </button>
+        </div>
+    </section>
+
+    <hr>
+
+    <section class="mi-selects">
+        <header>
+            <h2>Select</h2>
+        </header>
+
+        <div class="row">
+            <select class="mi-select">
+                <option value="" disabled selected>Select an item</option>
+                <option value="1">Item 1</option>
+                <option value="2">Item 2</option>
+                <option value="3">Item 3</option>
+            </select>
+
+            <select class="mi-select" disabled>
+                <option value="" disabled selected>Select an item</option>
+            </select>
         </div>
     </section>
 </body>

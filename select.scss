@@ -1,0 +1,37 @@
+@use "node_modules/@mapsindoors/midt/border";
+@use "node_modules/@mapsindoors/midt/color";
+@use "node_modules/@mapsindoors/midt/font";
+@use "node_modules/@mapsindoors/midt/opacity";
+@use "node_modules/@mapsindoors/midt/padding";
+
+@use "node_modules/@mapsindoors/midt/build/scss/variables"as variables;
+
+
+.mi-select {
+    background: linear-gradient(variables.$color-gray-10, variables.$color-gray-20);
+    @include padding.horizontal(xx-small);
+    @include padding.vertical(x-small);
+    @include border.radius(medium);
+    @include border.width(medium);
+    @include border.style(solid);
+    @include border.gray(40);
+    @include color.black(base);
+    @include font.size(medium);
+    @include font.weight(large);
+
+    &:disabled {
+        @include opacity.opacity(x-large);
+        cursor: not-allowed;
+    }
+
+    &:not(:disabled):hover {
+        background: linear-gradient(variables.$color-gray-20,
+                variables.$color-gray-30);
+        @include border.gray(50);
+    }
+
+    &:not(:disabled):active {
+        background: linear-gradient(variables.$color-gray-30,
+                variables.$color-gray-20);
+    }
+}
