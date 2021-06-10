@@ -17,8 +17,6 @@
         @include border.radius(medium);
     }
 
-
-
     &[type="text"],
     &[type="number"],
     &[type="range"] {
@@ -43,7 +41,3 @@
         cursor: not-allowed;
     }
 }
-
-
-
-
