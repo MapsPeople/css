@@ -1,0 +1,49 @@
+@use 'node_modules/@mapsindoors/midt/font';
+@use 'node_modules/@mapsindoors/midt/border';
+@use 'node_modules/@mapsindoors/midt/padding';
+@use 'node_modules/@mapsindoors/midt/margin';
+@use 'node_modules/@mapsindoors/midt/opacity';
+@use 'node_modules/@mapsindoors/midt/sizing';
+
+.mi-input {
+
+    &[type="text"],
+    &[type="number"] {
+        @include font.size(medium);
+        @include padding.all(x-small);
+        @include border.style(solid);
+        @include border.width(medium);
+        @include border.gray(60);
+        @include border.radius(medium);
+    }
+
+
+
+    &[type="text"],
+    &[type="number"],
+    &[type="range"] {
+        display: block;
+
+        &:first-child {
+            @include margin.top(x-small);
+        }
+    }
+
+    &[type="radio"],
+    &[type="checkbox"] {
+        margin: 0;
+        @include sizing.width(medium);
+        @include sizing.height(medium);
+        // @include margin.right(x-small);
+        @include margin.vertical(x-small);
+    }
+
+    &:disabled {
+        @include opacity.opacity(x-large);
+        cursor: not-allowed;
+    }
+}
+
+
+
+
