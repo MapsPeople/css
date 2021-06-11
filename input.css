@@ -8,14 +8,11 @@
 }
 .mi-input[type=text], .mi-input[type=number], .mi-input[type=range] {
   display: block;
-  margin-top: 8px;
 }
 .mi-input[type=radio], .mi-input[type=checkbox] {
   margin: 0;
   width: 16px;
   height: 16px;
-  margin-top: 8px;
-  margin-bottom: 8px;
 }
 .mi-input:disabled {
   opacity: 0.48;

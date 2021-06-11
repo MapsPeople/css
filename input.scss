@@ -21,7 +21,6 @@
     &[type="number"],
     &[type="range"] {
         display: block;
-        @include margin.top(x-small);
     }
 
     &[type="radio"],
@@ -29,7 +28,6 @@
         margin: 0;
         @include sizing.width(medium);
         @include sizing.height(medium);
-        @include margin.vertical(x-small);
     }
 
     &:disabled {
