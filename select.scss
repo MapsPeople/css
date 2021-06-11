@@ -9,6 +9,7 @@
 $arrowBase64: "data:image/svg+xml;base64,PHN2ZyBmaWxsPScjNDQ0QjU1JyBoZWlnaHQ9JzI0JyB2aWV3Qm94PScwIDAgMjQgMjQnIHdpZHRoPScyNCcgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz4KPHBhdGggZD0nTTcgMTBsNSA1IDUtNXonLz4KPHBhdGggZD0nTTAgMGgyNHYyNEgweicgZmlsbD0nbm9uZScvPgo8L3N2Zz4=";
 
 .mi-select {
+    display: block;
     @include padding.vertical(x-small);
     @include padding.left(x-small);
     @include padding.right(x-large);
