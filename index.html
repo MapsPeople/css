@@ -415,16 +415,36 @@
         </header>
 
         <div class="row">
-            <select class="mi-select">
-                <option value="" disabled selected>Select an item</option>
-                <option value="1">Item 1</option>
-                <option value="2">Item 2</option>
-                <option value="3">Item 3</option>
-            </select>
 
-            <select class="mi-select" disabled>
-                <option value="" disabled selected>Select an item</option>
-            </select>
+        </div>
+
+        <div class="row">
+            <label class="mi-label">
+                Select
+                <select class="mi-select">
+                    <option value="" disabled selected>Select an item</option>
+                    <option value="1">Item 1</option>
+                    <option value="2">Item 2</option>
+                    <option value="3">Item 3</option>
+                </select>
+            </label>
+
+            <label class="mi-label">
+                Select disabled
+                <select class="mi-select" disabled>
+                    <option value="" disabled selected>Select an item</option>
+                </select>
+            </label>
+
+            <label>
+                Select
+                <select>
+                    <option value="" disabled selected>Select an item</option>
+                    <option value="1">Item 1</option>
+                    <option value="2">Item 2</option>
+                    <option value="3">Item 3</option>
+                </select>
+            </label>
         </div>
     </section>
 
@@ -445,6 +465,11 @@
                 Text disabled
                 <input type="text" value="value" class="mi-input" disabled>
             </label>
+
+            <label>
+                Text
+                <input type="text" value="value">
+            </label>
         </div>
 
         <div class="row">
@@ -457,11 +482,33 @@
                 Number disabled
                 <input type="number" value="1" disabled class="mi-input">
             </label>
+
+            <label>
+                Number
+                <input type="number" value="1">
+            </label>
+        </div>
+
+        <div class="row">
+            <label class="mi-label">
+                Range
+                <input type="range" class="mi-input">
+            </label>
+
+            <label class="mi-label">
+                Range disabled
+                <input type="range" disabled class="mi-input">
+            </label>
+
+            <label>
+                Range disabled
+                <input type="range">
+            </label>
         </div>
 
         <div class="row">
             <div class="column">
-                Radio
+                <h3>Radio</h3>
                 <div>
                     <label class="mi-label mi-label--right">
                         <input type="radio" name="group1" value="1" checked class="mi-input">
@@ -479,7 +526,7 @@
             </div>
 
             <div class="column">
-                Radio disabled
+                <h3>Radio disabled</h3>
                 <div>
                     <label class="mi-label mi-label--right">
                         <input type="radio" name="group2" value="1" checked disabled class="mi-input">
@@ -495,56 +542,73 @@
                     </label>
                 </div>
             </div>
-        </div>
-
-        <div class="row">
-            <div class="column">
-                Checkbox
-                <div>
-                    <label class="mi-label mi-label--right">
-                        <input type="checkbox" name="group3" value="1" checked class="mi-input">
-                        Choice 1
-                    </label>
-                    <label class="mi-label mi-label--right">
-                        <input type="checkbox" name="group3" value="2" class="mi-input">
-                        Choice 2
-                    </label>
-                    <label class="mi-label mi-label--right">
-                        <input type="checkbox" name="group3" value="3" class="mi-input">
-                        Choice 3
-                    </label>
-                </div>
-            </div>
 
             <div class="column">
-                Checkbox disabled
-                <div>
-                    <label class="mi-label mi-label--right">
-                        <input type="checkbox" name="group4" value="1" checked disabled class="mi-input">
-                        Choice 1
-                    </label>
-                    <label class="mi-label mi-label--right">
-                        <input type="checkbox" name="group4" value="2" disabled class="mi-input">
-                        Choice 2
-                    </label>
-                    <label class="mi-label mi-label--right">
-                        <input type="checkbox" name="group4" value="3" disabled class="mi-input">
-                        Choice 3
-                    </label>
-                </div>
+                <h3>Radio</h3>
+                <label>
+                    <input type="radio" name="group3" value="1" checked>
+                    Choice 1
+                </label>
+                <label>
+                    <input type="radio" name="group3" value="2">
+                    Choice 2
+                </label>
+                <label>
+                    <input type="radio" name="group3" value="3">
+                    Choice 3
+                </label>
             </div>
         </div>
 
         <div class="row">
-            <label class="mi-label">
-                Range
-                <input type="range" class="mi-input">
-            </label>
+            <div class="column">
+                <h3>Checkbox</h3>
+                <label class="mi-label mi-label--right">
+                    <input type="checkbox" name="group3" value="1" checked class="mi-input">
+                    Choice 1
+                </label>
+                <label class="mi-label mi-label--right">
+                    <input type="checkbox" name="group3" value="2" class="mi-input">
+                    Choice 2
+                </label>
+                <label class="mi-label mi-label--right">
+                    <input type="checkbox" name="group3" value="3" class="mi-input">
+                    Choice 3
+                </label>
+            </div>
 
-            <label class="mi-label">
-                Range disabled
-                <input type="range" disabled class="mi-input">
-            </label>
+            <div class="column">
+                <h3>Checkbox disabled</h3>
+                <label class="mi-label mi-label--right">
+                    <input type="checkbox" name="group4" value="1" checked disabled class="mi-input">
+                    Choice 1
+                </label>
+                <label class="mi-label mi-label--right">
+                    <input type="checkbox" name="group4" value="2" disabled class="mi-input">
+                    Choice 2
+                </label>
+                <label class="mi-label mi-label--right">
+                    <input type="checkbox" name="group4" value="3" disabled class="mi-input">
+                    Choice 3
+                </label>
+            </div>
+
+            <div class="column">
+                <h3>Checkbox</h3>
+                <label>
+                    <input type="checkbox" name="group3" value="1" checked>
+                    Choice 1
+                </label>
+                <label>
+                    <input type="checkbox" name="group3" value="2">
+                    Choice 2
+                </label>
+                <label>
+                    <input type="checkbox" name="group3" value="3">
+                    Choice 3
+                </label>
+            </div>
+
         </div>
 
     </section>
@@ -557,21 +621,23 @@
         </header>
 
         <div class="row">
-            <div>
-                <label for="toggle-1" class="mi-label mi-label--right">
-                    <input class="mi-toggle" id="toggle-1" type="checkbox" />
-                    <label class="mi-toggle-btn" for="toggle-1"></label>
-                    Toggle
-                </label>
-            </div>
+            <label for="toggle-1" class="mi-label mi-label--right">
+                <input class="mi-toggle" id="toggle-1" type="checkbox" />
+                <label class="mi-toggle-btn" for="toggle-1"></label>
+                Toggle
+            </label>
 
-            <div>
-                <label for="toggle-2" class="mi-label mi-label--right">
-                    <input class="mi-toggle" id="toggle-2" disabled type="checkbox" />
-                    <label class="mi-toggle-btn" for="toggle-2"></label>
-                    Toggle disabled
-                </label>
-            </div>
+            <label for="toggle-2" class="mi-label mi-label--right">
+                <input class="mi-toggle" id="toggle-2" disabled type="checkbox" />
+                <label class="mi-toggle-btn" for="toggle-2"></label>
+                Toggle disabled
+            </label>
+
+            <label for="toggle-3">
+                <input id="toggle-3" type="checkbox" />
+                <label for="toggle-3"></label>
+                Toggle
+            </label>
         </div>
     </section>
 
@@ -591,6 +657,11 @@
             <label class="mi-label">
                 Textarea disabled
                 <textarea cols="20" rows="4" disabled class="mi-textarea"></textarea>
+            </label>
+
+            <label>
+                Textarea
+                <textarea cols="20" rows="4"></textarea>
             </label>
         </div>
     </section>
