@@ -1,12 +1,15 @@
 .mi-label {
-  display: block;
+  display: flow-root;
   font-style: normal;
   font-size: 1rem;
   font-weight: 500;
   color: #1e2025;
+  margin-bottom: 16px;
 }
-.mi-label--right {
-  display: flex;
-  align-items: center;
-  gap: 8px;
+.mi-label > * {
+  margin-top: 4px;
+}
+.mi-label > input[type=radio], .mi-label > input[type=checkbox], .mi-label > label.mi-toggle-btn {
+  margin-right: 8px;
+  float: left;
 }
