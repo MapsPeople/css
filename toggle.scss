@@ -15,6 +15,7 @@
         user-select: none;
         outline: 0;
         box-sizing: border-box;
+        margin: 0;
         @include sizing.width(xxx-large);
         @include sizing.height(large);
         @include border.radius(pill);
