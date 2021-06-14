@@ -32,6 +32,9 @@
 .mi-toggle + .mi-toggle-btn:before {
   display: none;
 }
+.mi-toggle + .mi-toggle-btn + .mi-label {
+  margin: 0 0 0 8px;
+}
 .mi-toggle:checked + .mi-toggle-btn {
   background-color: #2a844e;
 }

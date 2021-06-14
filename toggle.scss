@@ -43,6 +43,10 @@
         &:before {
             display: none;
         }
+
+        +.mi-label {
+            margin: 0 0 0 8px;
+        }
     }
 
     &:checked+.mi-toggle-btn {

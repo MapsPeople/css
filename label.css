@@ -1,5 +1,4 @@
 .mi-label {
-  display: flow-root;
   font-style: normal;
   font-size: 1rem;
   font-weight: 500;
@@ -11,5 +10,4 @@
 }
 .mi-label > input[type=radio], .mi-label > input[type=checkbox], .mi-label > label.mi-toggle-btn {
   margin-right: 8px;
-  float: left;
 }

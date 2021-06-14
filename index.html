@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Demo page</title>
 
+    <link rel="stylesheet" href="helpers.css">
     <link rel="stylesheet" href="buttons.css">
     <link rel="stylesheet" href="select.css">
     <link rel="stylesheet" href="label.css">
@@ -613,23 +614,28 @@
         </header>
 
         <div class="row">
-            <label for="toggle-1" class="mi-label">
-                <input class="mi-toggle" id="toggle-1" type="checkbox" />
-                <label class="mi-toggle-btn" for="toggle-1"></label>
-                Toggle
-            </label>
+            <div class="column">
+                <div class="flex items-center">
+                    <input class="mi-toggle" id="toggle-1" type="checkbox" />
+                    <label class="mi-toggle-btn" for="toggle-1"></label>
+                    <label for="toggle-1" class="mi-label">Toggle</label>
+                </div>
+            </div>
 
-            <label for="toggle-2" class="mi-label">
-                <input class="mi-toggle" id="toggle-2" disabled type="checkbox" />
-                <label class="mi-toggle-btn" for="toggle-2"></label>
-                Toggle disabled
-            </label>
+            <div class="column">
+                <div class="flex items-center">
+                    <input class="mi-toggle" id="toggle-2" disabled type="checkbox" />
+                    <label class="mi-toggle-btn" for="toggle-2"></label>
+                    <label class="mi-label">Toggle disabled</label>
+                </div>
+            </div>
 
-            <label for="toggle-3">
-                <input id="toggle-3" type="checkbox" />
-                <label for="toggle-3"></label>
-                Toggle
-            </label>
+            <div class="column">
+                <label>
+                    <input type="checkbox" />
+                    Toggle
+                </label>
+            </div>
         </div>
     </section>
 

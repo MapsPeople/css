@@ -10,9 +10,9 @@
   display: block;
 }
 .mi-input[type=radio], .mi-input[type=checkbox] {
-  margin: 0;
-  width: 16px;
-  height: 16px;
+  margin: 0px;
+  -webkit-transform: scale(1.2, 1.2);
+  transform: scale(1.2, 1.2);
 }
 .mi-input:disabled {
   opacity: 0.48;

@@ -25,9 +25,9 @@
 
     &[type="radio"],
     &[type="checkbox"] {
-        margin: 0;
-        @include sizing.width(medium);
-        @include sizing.height(medium);
+        margin: 0px;
+        -webkit-transform: scale(1.2,1.2);
+        transform: scale(1.2,1.2);
     }
 
     &:disabled {

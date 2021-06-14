@@ -5,7 +5,6 @@
 @use "node_modules/@mapsindoors/midt/build/scss/variables" as variables;
 
 .mi-label {
-    display: flow-root;
     font-style: normal;
     @include font.size(medium);
     @include font.weight(large);
@@ -20,6 +19,5 @@
     &>input[type="checkbox"],
     &>label.mi-toggle-btn {
         margin-right: 8px;
-        float: left;
     }
 }
