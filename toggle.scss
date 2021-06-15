@@ -1,0 +1,64 @@
+@use 'node_modules/@mapsindoors/midt/border';
+@use 'node_modules/@mapsindoors/midt/padding';
+@use 'node_modules/@mapsindoors/midt/opacity';
+@use 'node_modules/@mapsindoors/midt/sizing';
+@use "node_modules/@mapsindoors/midt/background-color";
+@use "node_modules/@mapsindoors/midt/elevation";
+@use "node_modules/@mapsindoors/midt/transitions";
+
+.mi-toggle {
+    display: none;
+
+    +.mi-toggle-btn {
+        display: block;
+        position: relative;
+        user-select: none;
+        outline: 0;
+        box-sizing: border-box;
+        margin: 0;
+        @include sizing.width(xxx-large);
+        @include sizing.height(large);
+        @include border.radius(pill);
+        @include padding.all(xxx-small);
+        @include transitions.transition(quickly);
+        @include background-color.gray(60);
+
+        &:after,
+        &:before {
+            width: 20px;
+            height: 20px;
+            content: "";
+            position: relative;
+            display: block;
+        }
+
+        &:after {
+            left: 0;
+            @include border.radius(circle);
+            @include background-color.white(base);
+            @include elevation.elevation(x-small);
+            @include transitions.transition(quickly);
+        }
+
+        &:before {
+            display: none;
+        }
+
+        +.mi-label {
+            margin: 0 0 0 8px;
+        }
+    }
+
+    &:checked+.mi-toggle-btn {
+        @include background-color.green(60);
+
+        &:after {
+            left: 24px;
+        }
+    }
+
+    &:disabled+.mi-toggle-btn {
+        @include opacity.opacity(large);
+        cursor: not-allowed;
+    }
+}

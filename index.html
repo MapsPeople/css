@@ -1,10 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Demo page</title>
+
+    <link rel="stylesheet" href="helpers.css">
+    <link rel="stylesheet" href="buttons.css">
+    <link rel="stylesheet" href="select.css">
+    <link rel="stylesheet" href="label.css">
+    <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="toggle.css">
+    <link rel="stylesheet" href="textarea.css">
+
     <style>
+        body {
+            margin: 30px 50px 100px;
+        }
+
+        hr,
+        h2 {
+            margin: 50px 0;
+        }
+
         .mi-buttons .flex {
             display: flex;
         }
@@ -16,9 +35,25 @@
         .mi-buttons .mi-button {
             margin: 8px;
         }
+
+        .row {
+            display: flex;
+            margin-bottom: 40px;
+        }
+
+        .row>* {
+            margin-right: 40px;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            /* gap: 8px; */
+            margin: 8px;
+        }
     </style>
-    <link rel="stylesheet" href="buttons.css">
 </head>
+
 <body>
     <section class="mi-buttons">
         <header>
@@ -372,5 +407,262 @@
             </button>
         </div>
     </section>
+
+    <hr>
+
+    <section>
+        <header>
+            <h2>Select</h2>
+        </header>
+
+        <div class="row">
+            <label class="mi-label">
+                Select
+                <select class="mi-select">
+                    <option value="" disabled selected>Select an item</option>
+                    <option value="1">Item 1</option>
+                    <option value="2">Item 2</option>
+                    <option value="3">Item 3</option>
+                </select>
+            </label>
+
+            <label class="mi-label">
+                Select disabled
+                <select class="mi-select" disabled>
+                    <option value="" disabled selected>Select an item</option>
+                </select>
+            </label>
+
+            <label>
+                Select
+                <select>
+                    <option value="" disabled selected>Select an item</option>
+                    <option value="1">Item 1</option>
+                    <option value="2">Item 2</option>
+                    <option value="3">Item 3</option>
+                </select>
+            </label>
+        </div>
+    </section>
+
+    <hr>
+
+    <section>
+        <header>
+            <h2>Input</h2>
+        </header>
+
+        <div class="row">
+            <label class="mi-label">
+                Text
+                <input type="text" value="value" class="mi-input">
+            </label>
+
+            <label class="mi-label">
+                Text disabled
+                <input type="text" value="value" class="mi-input" disabled>
+            </label>
+
+            <label>
+                Text
+                <input type="text" value="value">
+            </label>
+        </div>
+
+        <div class="row">
+            <label class="mi-label">
+                Number
+                <input type="number" value="1" class="mi-input">
+            </label>
+
+            <label class="mi-label">
+                Number disabled
+                <input type="number" value="1" disabled class="mi-input">
+            </label>
+
+            <label>
+                Number
+                <input type="number" value="1">
+            </label>
+        </div>
+
+        <div class="row">
+            <label class="mi-label">
+                Range
+                <input type="range" class="mi-input">
+            </label>
+
+            <label class="mi-label">
+                Range disabled
+                <input type="range" disabled class="mi-input">
+            </label>
+
+            <label>
+                Range disabled
+                <input type="range">
+            </label>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <h3>Radio</h3>
+                <label class="mi-label">
+                    <input type="radio" name="group1" value="1" checked class="mi-input">
+                    Choice 1
+                </label>
+                <label class="mi-label">
+                    <input type="radio" name="group1" value="2" class="mi-input">
+                    Choice 2
+                </label>
+                <label class="mi-label">
+                    <input type="radio" name="group1" value="3" class="mi-input">
+                    Choice 3
+                </label>
+            </div>
+
+            <div class="column">
+                <h3>Radio disabled</h3>
+                <label class="mi-label">
+                    <input type="radio" name="group2" value="1" checked disabled class="mi-input">
+                    Choice 1
+                </label>
+                <label class="mi-label">
+                    <input type="radio" name="group2" value="2" disabled class="mi-input">
+                    Choice 2
+                </label>
+                <label class="mi-label">
+                    <input type="radio" name="group2" value="3" disabled class="mi-input">
+                    Choice 3
+                </label>
+            </div>
+
+            <div class="column">
+                <h3>Radio</h3>
+                <label>
+                    <input type="radio" name="group3" value="1" checked>
+                    Choice 1
+                </label>
+                <label>
+                    <input type="radio" name="group3" value="2">
+                    Choice 2
+                </label>
+                <label>
+                    <input type="radio" name="group3" value="3">
+                    Choice 3
+                </label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <h3>Checkbox</h3>
+                <label class="mi-label">
+                    <input type="checkbox" name="group3" value="1" checked class="mi-input">
+                    Choice 1
+                </label>
+                <label class="mi-label">
+                    <input type="checkbox" name="group3" value="2" class="mi-input">
+                    Choice 2
+                </label>
+                <label class="mi-label">
+                    <input type="checkbox" name="group3" value="3" class="mi-input">
+                    Choice 3
+                </label>
+            </div>
+
+            <div class="column">
+                <h3>Checkbox disabled</h3>
+                <label class="mi-label">
+                    <input type="checkbox" name="group4" value="1" checked disabled class="mi-input">
+                    Choice 1
+                </label>
+                <label class="mi-label">
+                    <input type="checkbox" name="group4" value="2" disabled class="mi-input">
+                    Choice 2
+                </label>
+                <label class="mi-label">
+                    <input type="checkbox" name="group4" value="3" disabled class="mi-input">
+                    Choice 3
+                </label>
+            </div>
+
+            <div class="column">
+                <h3>Checkbox</h3>
+                <label>
+                    <input type="checkbox" name="group3" value="1" checked>
+                    Choice 1
+                </label>
+                <label>
+                    <input type="checkbox" name="group3" value="2">
+                    Choice 2
+                </label>
+                <label>
+                    <input type="checkbox" name="group3" value="3">
+                    Choice 3
+                </label>
+            </div>
+
+        </div>
+
+    </section>
+
+    <hr>
+
+    <section>
+        <header>
+            <h2>Input toggle</h2>
+        </header>
+
+        <div class="row">
+            <div class="column">
+                <div class="flex items-center">
+                    <input class="mi-toggle" id="toggle-1" type="checkbox" />
+                    <label class="mi-toggle-btn" for="toggle-1"></label>
+                    <label for="toggle-1" class="mi-label">Toggle</label>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="flex items-center">
+                    <input class="mi-toggle" id="toggle-2" disabled type="checkbox" />
+                    <label class="mi-toggle-btn" for="toggle-2"></label>
+                    <label class="mi-label">Toggle disabled</label>
+                </div>
+            </div>
+
+            <div class="column">
+                <label>
+                    <input type="checkbox" />
+                    Toggle
+                </label>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section>
+        <header>
+            <h2>Textarea</h2>
+        </header>
+
+        <div class="row">
+            <label class="mi-label">
+                Textarea
+                <textarea cols="20" rows="4" class="mi-textarea"></textarea>
+            </label>
+
+            <label class="mi-label">
+                Textarea disabled
+                <textarea cols="20" rows="4" disabled class="mi-textarea"></textarea>
+            </label>
+
+            <label>
+                Textarea
+                <textarea cols="20" rows="4"></textarea>
+            </label>
+        </div>
+    </section>
 </body>
+
 </html>

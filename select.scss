@@ -1,0 +1,42 @@
+@use "node_modules/@mapsindoors/midt/border";
+@use "node_modules/@mapsindoors/midt/color";
+@use "node_modules/@mapsindoors/midt/font";
+@use "node_modules/@mapsindoors/midt/opacity";
+@use "node_modules/@mapsindoors/midt/padding";
+
+@use "node_modules/@mapsindoors/midt/build/scss/variables"as variables;
+
+$arrowBase64: "data:image/svg+xml;base64,PHN2ZyBmaWxsPScjNDQ0QjU1JyBoZWlnaHQ9JzI0JyB2aWV3Qm94PScwIDAgMjQgMjQnIHdpZHRoPScyNCcgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz4KPHBhdGggZD0nTTcgMTBsNSA1IDUtNXonLz4KPHBhdGggZD0nTTAgMGgyNHYyNEgweicgZmlsbD0nbm9uZScvPgo8L3N2Zz4=";
+
+.mi-select {
+    display: block;
+    @include padding.vertical(x-small);
+    @include padding.left(x-small);
+    @include padding.right(x-large);
+    @include border.radius(medium);
+    @include border.width(medium);
+    @include border.style(solid);
+    @include border.gray(40);
+    @include color.black(base);
+    @include font.size(medium);
+    @include font.weight(large);
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url($arrowBase64) 96% / 15% no-repeat, linear-gradient(variables.$color-gray-10, variables.$color-gray-20);
+
+    &:disabled {
+        @include opacity.opacity(large);
+        cursor: not-allowed;
+    }
+
+    &:not(:disabled):hover {
+        background: url($arrowBase64) 96% / 15% no-repeat, linear-gradient(variables.$color-gray-20, variables.$color-gray-30);
+        @include border.gray(50);
+    }
+
+    &:not(:disabled):active {
+        background: url($arrowBase64) 96% / 15% no-repeat, linear-gradient(variables.$color-gray-30, variables.$color-gray-20);
+    }
+}
