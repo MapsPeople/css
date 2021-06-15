@@ -2,7 +2,7 @@
 @use 'node_modules/@mapsindoors/midt/margin';
 @use 'node_modules/@mapsindoors/midt/color';
 
-@use "node_modules/@mapsindoors/midt/build/scss/variables" as variables;
+@use "node_modules/@mapsindoors/midt/build/scss/variables"as variables;
 
 .mi-label {
     font-style: normal;
@@ -18,6 +18,6 @@
     &>input[type="radio"],
     &>input[type="checkbox"],
     &>label.mi-toggle-btn {
-        margin-right: 8px;
+        @include margin.right(x-small);
     }
 }
