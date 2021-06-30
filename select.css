@@ -14,16 +14,16 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: url("data:image/svg+xml;base64,PHN2ZyBmaWxsPScjNDQ0QjU1JyBoZWlnaHQ9JzI0JyB2aWV3Qm94PScwIDAgMjQgMjQnIHdpZHRoPScyNCcgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz4KPHBhdGggZD0nTTcgMTBsNSA1IDUtNXonLz4KPHBhdGggZD0nTTAgMGgyNHYyNEgweicgZmlsbD0nbm9uZScvPgo8L3N2Zz4=") 96%/15% no-repeat, linear-gradient(#f5f7fa, #ebeff5);
+  background: url("data:image/svg+xml;base64,PHN2ZyBmaWxsPScjNDQ0QjU1JyBoZWlnaHQ9JzI0JyB2aWV3Qm94PScwIDAgMjQgMjQnIHdpZHRoPScyNCcgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz4KPHBhdGggZD0nTTcgMTBsNSA1IDUtNXonLz4KPHBhdGggZD0nTTAgMGgyNHYyNEgweicgZmlsbD0nbm9uZScvPgo8L3N2Zz4=") 96%/24px no-repeat, linear-gradient(#f5f7fa, #ebeff5);
 }
 .mi-select:disabled {
   opacity: 0.48;
   cursor: not-allowed;
 }
 .mi-select:not(:disabled):hover {
-  background: url("data:image/svg+xml;base64,PHN2ZyBmaWxsPScjNDQ0QjU1JyBoZWlnaHQ9JzI0JyB2aWV3Qm94PScwIDAgMjQgMjQnIHdpZHRoPScyNCcgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz4KPHBhdGggZD0nTTcgMTBsNSA1IDUtNXonLz4KPHBhdGggZD0nTTAgMGgyNHYyNEgweicgZmlsbD0nbm9uZScvPgo8L3N2Zz4=") 96%/15% no-repeat, linear-gradient(#ebeff5, #dee3ed);
+  background: url("data:image/svg+xml;base64,PHN2ZyBmaWxsPScjNDQ0QjU1JyBoZWlnaHQ9JzI0JyB2aWV3Qm94PScwIDAgMjQgMjQnIHdpZHRoPScyNCcgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz4KPHBhdGggZD0nTTcgMTBsNSA1IDUtNXonLz4KPHBhdGggZD0nTTAgMGgyNHYyNEgweicgZmlsbD0nbm9uZScvPgo8L3N2Zz4=") 96%/24px no-repeat, linear-gradient(#ebeff5, #dee3ed);
   border-color: #aeb9cb;
 }
 .mi-select:not(:disabled):active {
-  background: url("data:image/svg+xml;base64,PHN2ZyBmaWxsPScjNDQ0QjU1JyBoZWlnaHQ9JzI0JyB2aWV3Qm94PScwIDAgMjQgMjQnIHdpZHRoPScyNCcgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz4KPHBhdGggZD0nTTcgMTBsNSA1IDUtNXonLz4KPHBhdGggZD0nTTAgMGgyNHYyNEgweicgZmlsbD0nbm9uZScvPgo8L3N2Zz4=") 96%/15% no-repeat, linear-gradient(#dee3ed, #ebeff5);
+  background: url("data:image/svg+xml;base64,PHN2ZyBmaWxsPScjNDQ0QjU1JyBoZWlnaHQ9JzI0JyB2aWV3Qm94PScwIDAgMjQgMjQnIHdpZHRoPScyNCcgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz4KPHBhdGggZD0nTTcgMTBsNSA1IDUtNXonLz4KPHBhdGggZD0nTTAgMGgyNHYyNEgweicgZmlsbD0nbm9uZScvPgo8L3N2Zz4=") 96%/24px no-repeat, linear-gradient(#dee3ed, #ebeff5);
 }

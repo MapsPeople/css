@@ -24,7 +24,7 @@ $arrowBase64: "data:image/svg+xml;base64,PHN2ZyBmaWxsPScjNDQ0QjU1JyBoZWlnaHQ9JzI
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    background: url($arrowBase64) 96% / 15% no-repeat, linear-gradient(variables.$color-gray-10, variables.$color-gray-20);
+    background: url($arrowBase64) 96% / 24px no-repeat, linear-gradient(variables.$color-gray-10, variables.$color-gray-20);
 
     &:disabled {
         @include opacity.opacity(large);
@@ -32,11 +32,11 @@ $arrowBase64: "data:image/svg+xml;base64,PHN2ZyBmaWxsPScjNDQ0QjU1JyBoZWlnaHQ9JzI
     }
 
     &:not(:disabled):hover {
-        background: url($arrowBase64) 96% / 15% no-repeat, linear-gradient(variables.$color-gray-20, variables.$color-gray-30);
+        background: url($arrowBase64) 96% / 24px no-repeat, linear-gradient(variables.$color-gray-20, variables.$color-gray-30);
         @include border.gray(50);
     }
 
     &:not(:disabled):active {
-        background: url($arrowBase64) 96% / 15% no-repeat, linear-gradient(variables.$color-gray-30, variables.$color-gray-20);
+        background: url($arrowBase64) 96% / 24px no-repeat, linear-gradient(variables.$color-gray-30, variables.$color-gray-20);
     }
 }
