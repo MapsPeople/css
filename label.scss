@@ -10,7 +10,6 @@
     @include font.size(medium);
     @include font.weight(large);
     @include color.black(base);
-    @include margin.bottom(medium);
 
     &>* {
         @include margin.top(xx-small);
