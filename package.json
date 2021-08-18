@@ -9,7 +9,7 @@
     "main": "index.html",
     "repository": {
         "type": "git",
-        "url": "git://github.com/mapsindoors/css.git"
+        "url": "git://github.com/mapspeople/css.git"
     },
     "keywords": [
         "mapsindoors",
@@ -18,9 +18,9 @@
     "author": "MapsPeople A/S",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/mapsindoors/css/issues"
+        "url": "https://github.com/mapspeople/css/issues"
     },
-    "homepage": "https://github.com/mapsindoors/css#readme",
+    "homepage": "https://github.com/mapspeople/css#readme",
     "devDependencies": {
         "@mapsindoors/midt": "^11.1.3",
         "sass": "^1.26.0"
