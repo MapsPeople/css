@@ -1,6 +1,6 @@
 {
     "name": "@mapsindoors/css",
-    "version": "0.3.0",
+    "version": "0.4.0",
     "description": "CSS components and helpers using MapsIndoors Design Tokens (midt)",
     "scripts": {
         "sass": "sass .:. --no-source-map",
