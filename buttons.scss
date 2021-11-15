@@ -116,6 +116,7 @@ a.mi-button {
     &--danger {
         // This is unqiue to --danger modifier.
         @include color.red(60);
+
         border: none;
         background: none;
 
@@ -127,7 +128,6 @@ a.mi-button {
         &:not(:disabled):hover {
             background: none;
             @include background-color.red(10);
-            
         }
 
         &:not(:disabled):active {
