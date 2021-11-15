@@ -83,6 +83,23 @@ a.mi-button {
 .mi-button--base:not(:disabled):active, .mi-button--danger:not(:disabled):active {
   background: linear-gradient(#dee3ed, #ebeff5);
 }
+.mi-button--danger {
+  color: #de1b1b;
+  border: none;
+  background: none;
+}
+.mi-button--danger object {
+  filter: invert(29%) sepia(76%) saturate(4633%) hue-rotate(347deg) brightness(85%) contrast(108%);
+}
+.mi-button--danger:not(:disabled):hover {
+  background: none;
+  background-color: #faf0f0;
+}
+.mi-button--danger:not(:disabled):active {
+  background: none;
+  color: #ba0d0d;
+  background-color: #fad6d6;
+}
 .mi-button--primary {
   color: #ffffff;
   border-color: #20693e;
@@ -110,12 +127,6 @@ a.mi-button {
 }
 .mi-button--delete:not(:disabled):active {
   background: linear-gradient(#ba0d0d, #de1b1b);
-}
-.mi-button--danger {
-  color: #de1b1b;
-}
-.mi-button--danger object {
-  filter: invert(29%) sepia(76%) saturate(4633%) hue-rotate(347deg) brightness(85%) contrast(108%);
 }
 .mi-button--outline {
   color: #3071d9;

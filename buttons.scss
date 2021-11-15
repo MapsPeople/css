@@ -113,6 +113,31 @@ a.mi-button {
         }
     }
 
+    &--danger {
+        // This is unqiue to --danger modifier.
+        @include color.red(60);
+        border: none;
+        background: none;
+
+        object {
+            filter: invert(29%) sepia(76%) saturate(4633%) hue-rotate(347deg)
+                brightness(85%) contrast(108%);
+        }
+
+        &:not(:disabled):hover {
+            background: none;
+            @include background-color.red(10);
+            
+        }
+
+        &:not(:disabled):active {
+            background: none;
+            @include color.red(70);
+            @include background-color.red(20);
+        }
+
+    }
+
     &--primary {
         @include color.white(white);
         @include border.green(70);
@@ -166,15 +191,6 @@ a.mi-button {
                 variables.$color-red-70,
                 variables.$color-red-60
             );
-        }
-    }
-
-    &--danger {
-        @include color.red(60);
-
-        object {
-            filter: invert(29%) sepia(76%) saturate(4633%) hue-rotate(347deg)
-                brightness(85%) contrast(108%);
         }
     }
 
