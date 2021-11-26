@@ -9,7 +9,8 @@
 
     &[type="text"],
     &[type="search"],
-    &[type="number"] {
+    &[type="number"],
+    &[type="tel"] {
         @include font.size(medium);
         @include padding.all(x-small);
         @include border.style(solid);
@@ -21,7 +22,8 @@
     &[type="text"],
     &[type="search"],
     &[type="number"],
-    &[type="range"] {
+    &[type="range"],
+    &[type="tel"] {
         display: block;
     }
 
