@@ -1,8 +1,11 @@
 # This workflow will publish the release as an NPM package
-name: Publish Package to npmjs
+
+name: Publish NPM package
+
 on:
   release:
     types: [released]
+
 jobs:
   publish-npm:
     runs-on: ubuntu-latest
@@ -18,4 +21,4 @@ jobs:
       - run: npm version --no-git-tag-version --allow-same-version ${{ env.TAG }}
       - run: npm publish --access public
         env:
-          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+          NODE_AUTH_TOKEN: ${{secrets.npm_auth_token}}
