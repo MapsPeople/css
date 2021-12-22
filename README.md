@@ -12,8 +12,9 @@ To release a new version:
 
 1. Make your changes and commit them
 1. Update the version number in `package.json` based on [Semantic Versioning](https://semver.org)
-1. Commit the version number change with this message: `Release X.X.X`
-1. The GitHub Action to publish to npm will automatically check for a difference between the latest version and the new version in `package.json` and make the release
+1. Tag the last commit with the version number in this format: `v1.2.3`
+1. Push your commits with `git push --follow-tags`
+1. GitHub Actions on the repo will create a Release with the tag's version number and push that versioned release to npm
 
 ## mi-button
 
