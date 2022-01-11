@@ -10,6 +10,7 @@
     &[type="text"],
     &[type="search"],
     &[type="number"],
+    &[type="password"],
     &[type="tel"] {
         @include font.size(medium);
         @include padding.all(x-small);
@@ -22,6 +23,7 @@
     &[type="text"],
     &[type="search"],
     &[type="number"],
+    &[type="password"],
     &[type="range"],
     &[type="tel"] {
         display: block;
