@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="select.css">
     <link rel="stylesheet" href="label.css">
     <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="form-error.css">
     <link rel="stylesheet" href="toggle.css">
     <link rel="stylesheet" href="textarea.css">
 
@@ -711,6 +712,47 @@
             <label>
                 Textarea
                 <textarea cols="20" rows="4"></textarea>
+            </label>
+        </div>
+    </section>
+
+    <hr>
+
+    <section>
+        <header>
+            <h2>Validation errors</h2>
+        </header>
+
+        <div class="row">
+            <label class="mi-label">
+                Password (invalid)
+                <input type="password" value="1234" class="mi-input">
+                <small class="mi-form__error">
+                    Password must be minimum 8 characters.
+                </small>
+            </label>
+        </div>
+
+        <div class="row">
+            <label class="mi-label">
+                Password with instruction (invalid)
+                <input type="password" value="1234" class="mi-input">
+                <small class="mi-form__instruction">
+                    Minimum 8 characters.
+                </small>
+                <small class="mi-form__error">
+                    Password must be minimum 8 characters.
+                </small>
+            </label>
+        </div>
+
+        <div class="row">
+            <label class="mi-label">
+                Password with instruction (valid)
+                <input type="password" value="12345678" class="mi-input">
+                <small class="mi-form__instruction mi-form__instruction--success">
+                    Minimum 8 characters.
+                </small>
             </label>
         </div>
     </section>
