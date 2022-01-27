@@ -1,0 +1,24 @@
+@use 'node_modules/@mapsindoors/midt/font';
+@use 'node_modules/@mapsindoors/midt/color';
+
+.mi-form {
+
+    &__instruction,
+    &__error {
+        display: block;
+        @include font.size(x-small);
+        @include font.weight(medium);
+    }
+
+    &__instruction {
+        @include color.gray(60);
+
+        &--success {
+            @include color.green(60);
+        }
+    }
+
+    &__error {
+        @include color.red(60);
+    }
+}

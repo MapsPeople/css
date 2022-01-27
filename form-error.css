@@ -1,0 +1,14 @@
+.mi-form__instruction, .mi-form__error {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+.mi-form__instruction {
+  color: #8d98aa;
+}
+.mi-form__instruction--success {
+  color: #2a844e;
+}
+.mi-form__error {
+  color: #de1b1b;
+}
