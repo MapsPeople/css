@@ -1,47 +1,47 @@
 .mi-toggle {
-  display: none;
-}
-.mi-toggle + .mi-toggle-btn {
-  display: block;
-  position: relative;
-  user-select: none;
-  outline: 0;
-  box-sizing: border-box;
   margin: 0;
-  width: 48px;
-  height: 24px;
-  border-radius: 9999px;
-  padding: 2px;
-  transition: 300ms ease;
-  background-color: #8d98aa;
 }
-.mi-toggle + .mi-toggle-btn:after, .mi-toggle + .mi-toggle-btn:before {
-  width: 20px;
-  height: 20px;
-  content: "";
-  position: relative;
-  display: block;
-}
-.mi-toggle + .mi-toggle-btn:after {
-  left: 0;
-  border-radius: 50%;
-  background-color: #fcfcfc;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.125), 0 2px 2px rgba(0, 0, 0, 0.125);
-  transition: 300ms ease;
-}
-.mi-toggle + .mi-toggle-btn:before {
-  display: none;
-}
-.mi-toggle + .mi-toggle-btn + .mi-label {
-  margin: 0 0 0 8px;
-}
-.mi-toggle:checked + .mi-toggle-btn {
-  background-color: #2a844e;
-}
-.mi-toggle:checked + .mi-toggle-btn:after {
-  left: 24px;
-}
-.mi-toggle:disabled + .mi-toggle-btn {
-  opacity: 0.48;
+.mi-toggle:disabled {
   cursor: not-allowed;
+}
+.mi-toggle + .mi-label {
+  margin-left: 8px;
+}
+
+@supports (appearance: none) or (-moz-appearance: none) or (-webkit-appearance: none) {
+  .mi-toggle {
+    padding: 2px;
+    box-sizing: border-box;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    width: 48px;
+    height: 24px;
+    border-radius: 9999px;
+    background-color: #8d98aa;
+    transition: background-color 300ms ease;
+  }
+  .mi-toggle:disabled {
+    opacity: 0.48;
+  }
+
+  .mi-toggle:checked {
+    background-color: #2a844e;
+  }
+
+  .mi-toggle::after {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    transform: translateX(0px);
+    border-radius: 50%;
+    background-color: #fcfcfc;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.125), 0 2px 2px rgba(0, 0, 0, 0.125);
+    transition: 300ms ease;
+  }
+
+  .mi-toggle:checked::after {
+    transform: translateX(24px);
+  }
 }
