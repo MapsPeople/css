@@ -1,64 +1,51 @@
+@use 'node_modules/@mapsindoors/midt/margin';
 @use 'node_modules/@mapsindoors/midt/border';
-@use 'node_modules/@mapsindoors/midt/padding';
 @use 'node_modules/@mapsindoors/midt/opacity';
 @use 'node_modules/@mapsindoors/midt/sizing';
 @use "node_modules/@mapsindoors/midt/background-color";
 @use "node_modules/@mapsindoors/midt/elevation";
 @use "node_modules/@mapsindoors/midt/transitions";
+@use "node_modules/@mapsindoors/midt/build/scss/variables";
 
 .mi-toggle {
-    display: none;
+    margin: 0;
+    padding: 2px;
+    box-sizing: border-box;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    @include sizing.width(xxx-large);
+    @include sizing.height(large);
+    @include border.radius(pill);
+    @include background-color.gray(60);
+    transition: background-color variables.$transition-quickly;
 
-    +.mi-toggle-btn {
-        display: block;
-        position: relative;
-        user-select: none;
-        outline: 0;
-        box-sizing: border-box;
-        margin: 0;
-        @include sizing.width(xxx-large);
-        @include sizing.height(large);
-        @include border.radius(pill);
-        @include padding.all(xxx-small);
-        @include transitions.transition(quickly);
-        @include background-color.gray(60);
-
-        &:after,
-        &:before {
-            width: 20px;
-            height: 20px;
-            content: "";
-            position: relative;
-            display: block;
-        }
-
-        &:after {
-            left: 0;
-            @include border.radius(circle);
-            @include background-color.white(base);
-            @include elevation.elevation(x-small);
-            @include transitions.transition(quickly);
-        }
-
-        &:before {
-            display: none;
-        }
-
-        +.mi-label {
-            margin: 0 0 0 8px;
-        }
-    }
-
-    &:checked+.mi-toggle-btn {
-        @include background-color.green(60);
-
-        &:after {
-            left: 24px;
-        }
-    }
-
-    &:disabled+.mi-toggle-btn {
+    &:disabled {
         @include opacity.opacity(large);
         cursor: not-allowed;
     }
+
+    +.mi-label {
+        @include margin.left(x-small)
+    }
+}
+
+.mi-toggle:checked {
+    @include background-color.green(60);
+}
+
+.mi-toggle::after {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    transform: translateX(0px);
+    @include border.radius(circle);
+    @include background-color.white(base);
+    @include elevation.elevation(x-small);
+    @include transitions.transition(quickly);
+}
+
+.mi-toggle:checked::after {
+    transform: translateX(24px);
 }
