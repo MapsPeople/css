@@ -71,34 +71,17 @@ a.mi-button {
 .mi-button--icon-both object:last-of-type {
   margin-left: 8px;
 }
-.mi-button--base, .mi-button--danger {
+.mi-button--base {
   background: linear-gradient(#f5f7fa, #ebeff5);
   color: #1e2025;
   border-color: #c8d0e0;
 }
-.mi-button--base:not(:disabled):hover, .mi-button--danger:not(:disabled):hover {
+.mi-button--base:not(:disabled):hover {
   background: linear-gradient(#ebeff5, #dee3ed);
   border-color: #aeb9cb;
 }
-.mi-button--base:not(:disabled):active, .mi-button--danger:not(:disabled):active {
+.mi-button--base:not(:disabled):active {
   background: linear-gradient(#dee3ed, #ebeff5);
-}
-.mi-button--danger {
-  color: #de1b1b;
-  border: none;
-  background: none;
-}
-.mi-button--danger object {
-  filter: invert(29%) sepia(76%) saturate(4633%) hue-rotate(347deg) brightness(85%) contrast(108%);
-}
-.mi-button--danger:not(:disabled):hover {
-  background: none;
-  background-color: #faf0f0;
-}
-.mi-button--danger:not(:disabled):active {
-  background: none;
-  color: #ba0d0d;
-  background-color: #fad6d6;
 }
 .mi-button--primary {
   color: #ffffff;
