@@ -88,8 +88,7 @@ a.mi-button {
         }
     }
 
-    &--base,
-    &--danger {
+    &--base {
         background: linear-gradient(
             variables.$color-gray-10,
             variables.$color-gray-20
@@ -111,30 +110,6 @@ a.mi-button {
                 variables.$color-gray-20
             );
         }
-    }
-
-    &--danger {
-        @include color.red(60);
-
-        border: none;
-        background: none;
-
-        object {
-            filter: invert(29%) sepia(76%) saturate(4633%) hue-rotate(347deg)
-                brightness(85%) contrast(108%);
-        }
-
-        &:not(:disabled):hover {
-            background: none;
-            @include background-color.red(10);
-        }
-
-        &:not(:disabled):active {
-            background: none;
-            @include color.red(70);
-            @include background-color.red(20);
-        }
-
     }
 
     &--primary {
