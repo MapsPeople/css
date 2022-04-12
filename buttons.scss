@@ -21,6 +21,7 @@ a.mi-button {
     @include border.radius(medium);
     @include border.width(medium);
     @include border.style(solid);
+    @include font.family(sans-serif);
     @include font.size(medium);
     @include font.weight(large);
     @include padding.horizontal(medium);
