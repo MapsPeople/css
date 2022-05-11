@@ -30,7 +30,7 @@ a.mi-button {
     align-items: center;
 
     &:disabled {
-        @include opacity.opacity(x-large);
+        @include opacity.opacity(large);
         cursor: not-allowed;
     }
 
