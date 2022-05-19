@@ -1,8 +1,5 @@
-<<<<<<< HEAD
 # Changelog
 
-=======
->>>>>>> ab28e792e652774e9eab3673006b2b2ff694fe35
 ## 2.1.0
 
 ### Features
