@@ -35,8 +35,7 @@ a.mi-button {
     }
 
     object {
-        filter: invert(9%) sepia(13%) saturate(692%) hue-rotate(185deg)
-            brightness(98%) contrast(91%);
+        filter: invert(9%) sepia(13%) saturate(692%) hue-rotate(185deg) brightness(98%) contrast(91%);
         @include sizing.width(medium);
         @include sizing.height(medium);
     }
@@ -90,82 +89,53 @@ a.mi-button {
     }
 
     &--base {
-        background: linear-gradient(
-            variables.$color-gray-10,
-            variables.$color-gray-20
-        );
+        background: linear-gradient(variables.$color-gray-10, variables.$color-gray-20);
         @include color.black(base);
         @include border.gray(40);
 
         &:not(:disabled):hover {
-            background: linear-gradient(
-                variables.$color-gray-20,
-                variables.$color-gray-30
-            );
+            background: linear-gradient(variables.$color-gray-20, variables.$color-gray-30);
             @include border.gray(50);
         }
 
         &:not(:disabled):active {
-            background: linear-gradient(
-                variables.$color-gray-30,
-                variables.$color-gray-20
-            );
+            background: linear-gradient(variables.$color-gray-30, variables.$color-gray-20);
         }
     }
 
     &--primary {
         @include color.white(white);
-        @include border.green(70);
-        background: linear-gradient(
-            variables.$color-green-50,
-            variables.$color-green-60
-        );
+        @include border.green(80);
+        background: linear-gradient(variables.$color-green-60, variables.$color-green-70);
 
         object {
-            filter: invert(100%) sepia(93%) saturate(0%) hue-rotate(201deg)
-                brightness(106%) contrast(106%);
+            filter: invert(100%) sepia(93%) saturate(0%) hue-rotate(201deg) brightness(106%) contrast(106%);
         }
 
         &:not(:disabled):hover {
-            background: linear-gradient(
-                variables.$color-green-60,
-                variables.$color-green-70
-            );
+            background: linear-gradient(variables.$color-green-60, variables.$color-green-70);
         }
 
         &:not(:disabled):active {
-            background: linear-gradient(
-                variables.$color-green-70,
-                variables.$color-green-60
-            );
+            background: linear-gradient(variables.$color-green-70, variables.$color-green-60);
         }
     }
 
     &--delete {
-        background: linear-gradient(
-            variables.$color-red-50,
-            variables.$color-red-60
-        );
+        background: linear-gradient(variables.$color-red-50, variables.$color-red-60);
         @include color.white(white);
         @include border.red(70);
 
         object {
-            filter: invert(100%) sepia(93%) saturate(0%) hue-rotate(201deg)
-                brightness(106%) contrast(106%);
+            filter: invert(100%) sepia(93%) saturate(0%) hue-rotate(201deg) brightness(106%) contrast(106%);
         }
 
         &:not(:disabled):hover {
-            background: linear-gradient(
-                variables.$color-red-60,
-                variables.$color-red-70
-            );
+            background: linear-gradient(variables.$color-red-60, variables.$color-red-70);
         }
 
         &:not(:disabled):active {
-            background: linear-gradient(
-                variables.$color-red-70,
-                variables.$color-red-60
-            );
+            background: linear-gradient(variables.$color-red-70, variables.$color-red-60);
         }
     }
 
@@ -175,8 +145,7 @@ a.mi-button {
         background-color: transparent;
 
         object {
-            filter: invert(38%) sepia(97%) saturate(742%) hue-rotate(188deg)
-                brightness(86%) contrast(97%);
+            filter: invert(38%) sepia(97%) saturate(742%) hue-rotate(188deg) brightness(86%) contrast(97%);
         }
 
         &:not(:disabled):hover {
@@ -199,8 +168,7 @@ a.mi-button {
         cursor: pointer;
 
         object {
-            filter: invert(38%) sepia(97%) saturate(742%) hue-rotate(188deg)
-                brightness(86%) contrast(97%);
+            filter: invert(38%) sepia(97%) saturate(742%) hue-rotate(188deg) brightness(86%) contrast(97%);
         }
 
         &:not(:disabled):hover {

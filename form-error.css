@@ -4,11 +4,11 @@
   font-weight: 400;
 }
 .mi-form__instruction {
-  color: #8d98aa;
+  color: #6b7280;
 }
 .mi-form__instruction--success {
-  color: #2a844e;
+  color: #22c55e;
 }
 .mi-form__error {
-  color: #de1b1b;
+  color: #ef4444;
 }
