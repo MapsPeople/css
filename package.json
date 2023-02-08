@@ -5,7 +5,7 @@
     "scripts": {
         "sass": "sass .:. --no-source-map",
         "sass-watch": "sass --watch .:. --no-source-map",
-        "start": "npm run sass-watch"
+        "start": "npm run sass-watch & live-server"
     },
     "main": "index.html",
     "repository": {
@@ -24,6 +24,7 @@
     "homepage": "https://github.com/mapspeople/css#readme",
     "devDependencies": {
         "@mapsindoors/midt": "^18.1.7",
+        "live-server": "^1.2.2",
         "sass": "^1.58.0"
     }
 }
