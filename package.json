@@ -1,10 +1,11 @@
 {
     "name": "@mapsindoors/css",
-    "version": "2.1.0",
+    "version": "3.0.0",
     "description": "CSS components and helpers using MapsIndoors Design Tokens (midt)",
     "scripts": {
         "sass": "sass .:. --no-source-map",
-        "sass-watch": "sass --watch .:. --no-source-map"
+        "sass-watch": "sass --watch .:. --no-source-map",
+        "start": "npm run sass-watch"
     },
     "main": "index.html",
     "repository": {
@@ -23,6 +24,6 @@
     "homepage": "https://github.com/mapspeople/css#readme",
     "devDependencies": {
         "@mapsindoors/midt": "^18.1.7",
-        "sass": "^1.26.0"
+        "sass": "^1.58.0"
     }
 }
