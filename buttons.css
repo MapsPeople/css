@@ -6,7 +6,7 @@ a.mi-button {
   border-radius: 4px;
   border-width: 1px;
   border-style: solid;
-  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: Figtree, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 1rem;
   font-weight: 500;
   padding-left: 16px;
@@ -73,65 +73,65 @@ a.mi-button {
   margin-left: 8px;
 }
 .mi-button--base {
-  background: linear-gradient(#f5f7fa, #ebeff5);
-  color: #1e2025;
-  border-color: #c8d0e0;
+  background: linear-gradient(#f9fafb, #f3f4f6);
+  color: #1c1917;
+  border-color: #d1d5db;
 }
 .mi-button--base:not(:disabled):hover {
-  background: linear-gradient(#ebeff5, #dee3ed);
-  border-color: #aeb9cb;
+  background: linear-gradient(#f3f4f6, #e5e7eb);
+  border-color: #9ca3af;
 }
 .mi-button--base:not(:disabled):active {
-  background: linear-gradient(#dee3ed, #ebeff5);
+  background: linear-gradient(#e5e7eb, #f3f4f6);
 }
 .mi-button--primary {
   color: #ffffff;
-  border-color: #20693e;
-  background: linear-gradient(#3ba064, #2a844e);
+  border-color: #15803d;
+  background: linear-gradient(#22c55e, #16a34a);
 }
 .mi-button--primary object {
   filter: invert(100%) sepia(93%) saturate(0%) hue-rotate(201deg) brightness(106%) contrast(106%);
 }
 .mi-button--primary:not(:disabled):hover {
-  background: linear-gradient(#2a844e, #20693e);
+  background: linear-gradient(#16a34a, #15803d);
 }
 .mi-button--primary:not(:disabled):active {
-  background: linear-gradient(#20693e, #2a844e);
+  background: linear-gradient(#15803d, #16a34a);
 }
 .mi-button--delete {
-  background: linear-gradient(#f55151, #de1b1b);
+  background: linear-gradient(#f87171, #ef4444);
   color: #ffffff;
-  border-color: #ba0d0d;
+  border-color: #dc2626;
 }
 .mi-button--delete object {
   filter: invert(100%) sepia(93%) saturate(0%) hue-rotate(201deg) brightness(106%) contrast(106%);
 }
 .mi-button--delete:not(:disabled):hover {
-  background: linear-gradient(#de1b1b, #ba0d0d);
+  background: linear-gradient(#ef4444, #dc2626);
 }
 .mi-button--delete:not(:disabled):active {
-  background: linear-gradient(#ba0d0d, #de1b1b);
+  background: linear-gradient(#dc2626, #ef4444);
 }
 .mi-button--outline {
-  color: #3071d9;
-  border-color: #3071d9;
+  color: #3b82f6;
+  border-color: #3b82f6;
   background-color: transparent;
 }
 .mi-button--outline object {
   filter: invert(38%) sepia(97%) saturate(742%) hue-rotate(188deg) brightness(86%) contrast(97%);
 }
 .mi-button--outline:not(:disabled):hover {
-  color: #1d5bbf;
-  border-color: #1d5bbf;
-  background-color: #eef4fc;
+  color: #2563eb;
+  border-color: #2563eb;
+  background-color: #eff6ff;
 }
 .mi-button--outline:not(:disabled):active {
-  color: #1d5bbf;
-  border-color: #1d5bbf;
-  background-color: #cfe0fc;
+  color: #2563eb;
+  border-color: #2563eb;
+  background-color: #dbeafe;
 }
 .mi-button--link {
-  color: #3071d9;
+  color: #3b82f6;
   border-style: none;
   background-color: transparent;
   cursor: pointer;
@@ -140,15 +140,15 @@ a.mi-button {
   filter: invert(38%) sepia(97%) saturate(742%) hue-rotate(188deg) brightness(86%) contrast(97%);
 }
 .mi-button--link:not(:disabled):hover {
-  color: #1d5bbf;
-  border-color: #1d5bbf;
-  background-color: #eef4fc;
+  color: #2563eb;
+  border-color: #2563eb;
+  background-color: #eff6ff;
 }
 .mi-button--link:disabled:hover {
   cursor: not-allowed;
 }
 .mi-button--link:not(:disabled):active {
-  color: #1d5bbf;
-  border-color: #1d5bbf;
-  background-color: #cfe0fc;
+  color: #2563eb;
+  border-color: #2563eb;
+  background-color: #dbeafe;
 }
