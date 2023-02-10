@@ -5,6 +5,7 @@
     "scripts": {
         "sass": "sass .:. --no-source-map",
         "sass-watch": "sass --watch .:. --no-source-map",
+        "build": "npm run sass",
         "start": "npm run sass-watch & live-server"
     },
     "main": "index.html",
