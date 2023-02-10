@@ -71,6 +71,7 @@ a.mi-button {
             @include margin.right(x-small);
         }
     }
+
     &--icon-right {
         @include padding.right(small);
         object {
@@ -113,11 +114,11 @@ a.mi-button {
         }
 
         &:not(:disabled):hover {
-            background: linear-gradient(variables.$color-green-60, variables.$color-green-70);
+            background: linear-gradient(variables.$color-green-70, variables.$color-green-80);
         }
 
         &:not(:disabled):active {
-            background: linear-gradient(variables.$color-green-70, variables.$color-green-60);
+            background: linear-gradient(variables.$color-green-80, variables.$color-green-70);
         }
     }
 
