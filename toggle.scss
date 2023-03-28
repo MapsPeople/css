@@ -39,7 +39,7 @@
     }
 
     .mi-toggle:checked {
-        @include background-color.green(60);
+        @include background-color.green(70);
     }
 
     .mi-toggle::after {
