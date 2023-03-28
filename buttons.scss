@@ -90,53 +90,53 @@ a.mi-button {
     }
 
     &--base {
-        background: linear-gradient(variables.$color-gray-10, variables.$color-gray-20);
+        background: linear-gradient(variables.$tailwind-colors-gray-100, variables.$tailwind-colors-gray-200);
         @include color.black(base);
         @include border.gray(40);
 
         &:not(:disabled):hover {
-            background: linear-gradient(variables.$color-gray-20, variables.$color-gray-30);
+            background: linear-gradient(variables.$tailwind-colors-gray-200, variables.$tailwind-colors-gray-300);
             @include border.gray(50);
         }
 
         &:not(:disabled):active {
-            background: linear-gradient(variables.$color-gray-30, variables.$color-gray-20);
+            background: linear-gradient(variables.$tailwind-colors-gray-300, variables.$tailwind-colors-gray-200);
         }
     }
 
     &--primary {
         @include color.white(white);
         @include border.green(80);
-        background: linear-gradient(variables.$color-green-60, variables.$color-green-70);
+        background: linear-gradient(variables.$tailwind-colors-green-600, variables.$tailwind-colors-green-700);
 
         object {
             filter: invert(100%) sepia(93%) saturate(0%) hue-rotate(201deg) brightness(106%) contrast(106%);
         }
 
         &:not(:disabled):hover {
-            background: linear-gradient(variables.$color-green-70, variables.$color-green-80);
+            background: linear-gradient(variables.$tailwind-colors-green-700, variables.$tailwind-colors-green-800);
         }
 
         &:not(:disabled):active {
-            background: linear-gradient(variables.$color-green-80, variables.$color-green-70);
+            background: linear-gradient(variables.$tailwind-colors-green-800, variables.$tailwind-colors-green-700);
         }
     }
 
     &--delete {
-        background: linear-gradient(variables.$color-red-50, variables.$color-red-60);
+        background: linear-gradient(variables.$tailwind-colors-red-500, variables.$tailwind-colors-red-600);
         @include color.white(white);
-        @include border.red(70);
+        @include border.red(80);
 
         object {
             filter: invert(100%) sepia(93%) saturate(0%) hue-rotate(201deg) brightness(106%) contrast(106%);
         }
 
         &:not(:disabled):hover {
-            background: linear-gradient(variables.$color-red-60, variables.$color-red-70);
+            background: linear-gradient(variables.$tailwind-colors-red-600, variables.$tailwind-colors-red-700);
         }
 
         &:not(:disabled):active {
-            background: linear-gradient(variables.$color-red-70, variables.$color-red-60);
+            background: linear-gradient(variables.$tailwind-colors-red-700, variables.$tailwind-colors-red-600);
         }
     }
 
