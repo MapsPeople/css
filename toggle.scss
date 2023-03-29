@@ -1,12 +1,11 @@
-@use 'node_modules/@mapsindoors/midt/margin';
-@use 'node_modules/@mapsindoors/midt/border';
-@use 'node_modules/@mapsindoors/midt/opacity';
-@use 'node_modules/@mapsindoors/midt/sizing';
+@use "node_modules/@mapsindoors/midt/margin";
+@use "node_modules/@mapsindoors/midt/border";
+@use "node_modules/@mapsindoors/midt/opacity";
+@use "node_modules/@mapsindoors/midt/sizing";
 @use "node_modules/@mapsindoors/midt/background-color";
 @use "node_modules/@mapsindoors/midt/elevation";
 @use "node_modules/@mapsindoors/midt/transitions";
 @use "node_modules/@mapsindoors/midt/build/scss/variables";
-
 
 .mi-toggle {
     margin: 0;
@@ -15,7 +14,7 @@
         cursor: not-allowed;
     }
 
-    +.mi-label {
+    + .mi-label {
         @include margin.left(x-small);
     }
 }
