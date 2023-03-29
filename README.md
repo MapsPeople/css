@@ -30,7 +30,6 @@ Variants:
 
 - `mi-button--primary`
 - `mi-button--base`
-- `mi-button--danger`
 - `mi-button--outline`
 - `mi-button--link`.
 

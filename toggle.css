@@ -25,7 +25,7 @@
     opacity: 0.48;
   }
   .mi-toggle:checked {
-    background-color: #22c55e;
+    background-color: #16a34a;
   }
   .mi-toggle::after {
     content: "";
