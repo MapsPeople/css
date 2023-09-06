@@ -45,6 +45,7 @@ a.mi-button {
         @include padding.vertical(x-small);
         @include font.size(small);
         @include sizing.height(x-large);
+
         object {
             @include sizing.width(medium);
             @include sizing.height(medium);
@@ -54,6 +55,7 @@ a.mi-button {
     &--large {
         @include padding.horizontal(medium);
         @include font.size(large);
+
         object {
             width: 20px;
             height: 20px;
@@ -67,6 +69,7 @@ a.mi-button {
 
     &--icon-left {
         @include padding.left(small);
+
         object {
             @include margin.right(x-small);
         }
@@ -74,6 +77,7 @@ a.mi-button {
 
     &--icon-right {
         @include padding.right(small);
+
         object {
             @include margin.left(x-small);
         }
@@ -81,9 +85,11 @@ a.mi-button {
 
     &--icon-both {
         @include padding.vertical(small);
+
         object:first-of-type {
             @include margin.right(x-small);
         }
+
         object:last-of-type {
             @include margin.left(x-small);
         }
@@ -186,6 +192,32 @@ a.mi-button {
             @include color.blue(70);
             @include border.blue(70);
             @include background-color.blue(20);
+        }
+    }
+
+    &--dusk {
+        @include color.white(white);
+        @include background-color.dusk(60);
+        @include border.dusk(70);
+
+        &:hover {
+            @include background-color.dusk(70);
+            @include border.dusk(80);
+        }
+
+        &:active {
+            @include background-color.dusk(80);
+            @include border.dusk(90);
+        }
+
+        &:focus {
+            outline: none;
+        }
+
+        &[disabled] {
+            @include background-color.dusk(60);
+            @include border.dusk(70);
+            @include opacity.opacity(x-large);
         }
     }
 }
