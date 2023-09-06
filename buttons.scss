@@ -215,9 +215,9 @@ a.mi-button {
         }
 
         &[disabled] {
+            @include opacity.opacity(x-large);
             @include background-color.dusk(60);
             @include border.dusk(70);
-            @include opacity.opacity(x-large);
         }
     }
 }
